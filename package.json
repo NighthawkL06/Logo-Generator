@@ -3,13 +3,21 @@
   "version": "1.0.0",
   "description": "Challenge 10",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+"scripts": {
+  "start": "node src/index.js",
+  "test": "echo \"Error: no test specified\" && exit 1"
+},
+
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/__tests__/**/*.test.js"
+    ]
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "inquirer": "^10.1.8"
+  "devDependencies": {
+    "jest": "^29.7.0"
   }
 }
